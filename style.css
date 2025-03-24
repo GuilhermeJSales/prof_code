@@ -181,3 +181,38 @@ footer{
   color:#2c2f32;
   padding:2.5rem;
 }
+
+/* MUSICAS */
+
+.musics{
+  padding-top:2.5rem;
+  padding-bottom:2.5rem;
+}
+
+.musics article{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+  "musica disco"
+  "musica audio";
+  justify-content: space-between;
+  gap:1.25rem;
+  padding-top: 2.5rem;
+}
+
+.musics audio{
+  grid-area:audio;
+  grid-row: span 2;
+}
+
+.musics pre{
+  grid-area:musica;
+  font-size:1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.musics img{
+  grid-area:disco;
+  width: 450px;
+}
