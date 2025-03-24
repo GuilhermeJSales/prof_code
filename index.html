@@ -1,63 +1,137 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
-</head>
-<body>
-    <header>
-        <span>Professor Ajax</span>
-        <nav class="menu">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="musica.html">Música para programação</a></li>
-                <li><a href="aulas.html">Aulas Grátis</a></li>
-                <li><a href="planos.html">Planos</a></li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
-        </nav>
-        
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Ajax - Professor Particular</title>
+  </head>
+  <body>
+    <header class="menu container">
+      <img class="logo" src="./assets/ajax.png" alt="logotipo" />
+
+      <nav>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./musica.html">Músicas</a></li>
+          <li><a href="./aulas-gratis.html">Aulas Gratuitas</a></li>
+          <li><a href="./planos.html">Planos</a></li>
+          <li><a href="Contato">Contato</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <section>
-        <img class="banner" src="./assets/banner.jpg" alt="banner professor ajax">
+    <section class="banner">
+      <div class="infos-banner container">
+        <h1>Ajax Professor Particular</h1>
+        <p>
+          Aulas particulares de Python, Java, C# e R, do básico ao avançado.<br />Domine
+          a programação com um ensino personalizado e prático!
+        </p>
+        <a class="saiba-mais" href="#saiba-mais">Saiba Mais</a>
+      </div>
     </section>
 
-    <main class="home-language">
-        <figure>
-            <img src="./assets/python.png" alt="python logo" width="150">
-            <figcaption>
-                Python é uma linguagem de programação multiplataforma que permite desenvolver aplicações para games, desktops, web e dispositivos móveis. Além disso, ela pode se comunicar com outras aplicações que foram desenvolvidas em outras linguagens como C, C++, Java e C#. Nesse artigo serão vistos exemplos diversos de sintaxes básicas utilizando o Python.
-            </figcaption>
-        </figure>
+    <section class="tecs container">
+      <img src="./assets/java.webp" alt="Java" />
+      <img src="./assets/c-sharp.webp" alt="C sharp" />
+      <img src="./assets/python.webp" alt="Python" />
+      <img src="./assets/R.webp" alt="R" />
+    </section>
 
-        <figure>
-            <img src="./assets/java.webp" alt="java logo" width="150">
-            <figcaption>
-                Você já deve ter ouvido falar que Java é tanto uma linguagem quanto uma plataforma. Isso quer dizer que, além da linguagem, o programador Java também conta com um conjunto de APIs que facilitam o desenvolvimento ao oferecerem soluções para situações comuns de desenvolvimento.
+    <main class="about">
+      <h2>Conheça nossas formações em programação</h2>
+      <div class="container about-aulas">
+        <article class="linguagem">
+          <figure>
+            <img class="tecnologia" src="./assets/java.webp" alt="Java Logo" />
+            <img
+              class="avatar"
+              src="./assets/avatar.png"
+              alt="avatar prof ajax"
+            />
+            <figcaption class="infos">
+              <h3>Aula de Java</h3>
+              Aprenda a programar com Java, desde a sintaxe básica até a criação
+              de aplicações orientadas a objetos, com foco em boas práticas e
+              escalabilidade.
             </figcaption>
-        </figure>
+          </figure>
+        </article>
 
-        <figure>
-            <img src="./assets/csharp.jpg" alt="c# logo" width="150">
-            <figcaption>
-                C# é uma linguagem de programação criada pela Microsoft como parte da plataforma .NET. Com ela podemos criar desde aplicações web, desktop, mobile e também jogos eletrônicos.
+        <article class="linguagem">
+          <figure>
+            <img
+              class="tecnologia"
+              src="./assets/c-sharp.webp"
+              alt="C sharp Logo"
+            />
+            <img
+              class="avatar"
+              src="./assets/avatar.png"
+              alt="avatar prof ajax"
+            />
+            <figcaption class="infos">
+              <h3>Aula de C Sharp</h3>
+              Aprenda C# com o Professor Ajax e desenvolva aplicações robustas e
+              eficientes, utilizando recursos como LINQ, ASP.NET e programação
+              orientada a objetos.
             </figcaption>
-        </figure>
+          </figure>
+        </article>
 
-        <figure>
-            <img src="./assets/R.jpg" alt="R logo" width="150">
-            <figcaption>
-                Recentemente, a Microsoft adquiriu a fornecedora Revolution Analytics, que é líder de softwares e serviços para a linguagem de programação R de código aberto. O interesse da Microsoft em adquirir este serviço reflete o interesse da comunidade, de forma que a linguagem R tem sido popularizada com o passar dos anos.
+        <article class="linguagem">
+          <figure>
+            <img
+              class="tecnologia"
+              src="./assets/python.webp"
+              alt="Python Logo"
+            />
+            <img
+              class="avatar"
+              src="./assets/avatar.png"
+              alt="avatar prof ajax"
+            />
+            <figcaption class="infos">
+              <h3>Aula de Python</h3>
+              Domine Python, explorando desde fundamentos até bibliotecas
+              poderosas como NumPy e Pandas, para automação, web e análise de
+              dados.
             </figcaption>
-        </figure>
+          </figure>
+        </article>
+
+        <article class="linguagem">
+          <figure>
+            <img class="tecnologia" src="./assets/R.webp" alt="R Logo" />
+            <img
+              class="avatar"
+              src="./assets/avatar.png"
+              alt="avatar prof ajax"
+            />
+            <figcaption class="infos">
+              <h3>Aula de Aula de R</h3>
+              Com o Professor Ajax, aprenda a usar R para análise de dados e
+              estatísticas, com foco em manipulação, visualização e modelagem de
+              dados.
+            </figcaption>
+          </figure>
+        </article>
+      </div>
     </main>
 
-
     <footer>
-        2025 - Aplicações para Internet
+      <p>
+        Desenvolvido para Aula de Aplicações para internet - Guilherme Jesus
+        Sales
+      </p>
     </footer>
-</body>
+  </body>
 </html>
