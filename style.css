@@ -125,18 +125,21 @@ html{
 
 .about-aulas{
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: start;
+  grid-template-columns: repeat(2,450px);
+  align-items: center;
+  justify-content: center;
   gap:1.25rem;
 
 }
 
 .linguagem{
-  color:#e2e2e2;
+  color:#324f84;
+  background:#e2e2e2;
   border:1px solid #e2e2e2;
   border-radius:15px;
   padding:1.25rem;
   height:350px;
+  box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, .5);
 
   display:flex;
   justify-content: space-between;
@@ -215,4 +218,37 @@ footer{
 .musics img{
   grid-area:disco;
   width: 450px;
+}
+
+
+/* aulas gratuits */
+
+.aulas{
+  padding-top:3.125rem;
+  padding-bottom:3.125rem;
+}
+
+.aulas article {
+  padding-top:3.125rem;
+  padding-bottom:3.125rem;
+}
+
+.aulas h2{
+  margin-bottom:3.125rem;
+}
+.aulas p{
+  margin-top:3.125rem;
+}
+
+pre {
+  background-color: #282c34; /* Cor de fundo semelhante ao VS Code */
+  color: #abb2bf; /* Cor do texto */
+  padding: 15px;
+  border-radius: 5px;
+  overflow-x: auto; /* Adiciona rolagem horizontal se o código for longo */
+  font-family: "Courier New", monospace;
+  max-width: 600px;
+}
+code {
+  font-size: 14px;
 }
