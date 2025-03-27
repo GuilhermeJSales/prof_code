@@ -241,14 +241,111 @@ footer{
 }
 
 pre {
-  background-color: #282c34; /* Cor de fundo semelhante ao VS Code */
-  color: #abb2bf; /* Cor do texto */
-  padding: 15px;
+  background-color: #282c34; 
+  color: #abb2bf; 
+  padding: 1rem;
   border-radius: 5px;
-  overflow-x: auto; /* Adiciona rolagem horizontal se o código for longo */
+  overflow-x: auto;
   font-family: "Courier New", monospace;
   max-width: 600px;
 }
 code {
-  font-size: 14px;
+  font-size: .875rem;
+}
+
+.planos{
+  padding: 3.125rem;
+}
+
+.planos h1{
+  text-align: center;
+  font-size:2rem;
+  color:#2c2f32;
+}
+
+.cards {
+  margin-top:1.875rem;
+  display:grid;
+  grid-template-columns: repeat(4, 350px);
+  align-items: start;
+  justify-content: center;
+  gap:1.25rem;
+}
+
+.cards article{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 1.25rem;
+  padding:1.25rem;
+  box-shadow: 6px 0px 5px rgba(0, 0, 0, .3);
+  text-align: center;
+  background:#324f84;
+  color:#E2E2E2;
+
+  height:auto;
+}
+
+.cards h2{
+  font-size:1.5rem;
+  margin-bottom:2rem;
+}
+
+.cards span{
+  font-size:3.75rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  border-bottom: 2px solid currentColor;
+  padding-bottom:3rem;
+  width: 98%;
+  display:block;
+  margin:auto auto 1.875rem;
+}
+
+.cards span sub, .cards span sup {
+  font-size:1.125rem;
+}
+
+.cards article p{
+  font-weight: bold;
+  margin-bottom:1.25rem;
+
+}
+
+.cards article li {
+  display:flex;
+  align-items: center;
+  gap:1rem;
+  justify-content: flex-start;
+  font-size:.875rem;
+}
+
+.cards article li {
+  padding:6px;
+}
+
+.cards article li::before{
+  content:"";
+  display:block;
+  width:5px;
+  height: 5px;
+  border-radius:50%;
+  background:#0EC714;
+}
+
+.cards button {
+  background: #e2e2e2;
+  outline: none;
+  border:none;
+  color:#324f84;
+  display:block;
+  max-width: 258px;
+  padding:1.25rem;
+  font-size:1.25rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  margin:1.875rem auto auto;
+  border-radius:4px;
+  align-self: flex-start;
 }
